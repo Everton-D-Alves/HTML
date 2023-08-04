@@ -1,0 +1,16 @@
+$f: 18pt
+@if $f < 18pt or $f > 18pt 
+    @error "Valor inválido!"
+@mixin cor1
+    @warn "Depreciado!"
+    color: lime
+    font-style: normal
+    font-size: 17pt
+    @debug "O font-size têm " + 17pt + " ! "
+    font-family: Courier
+@mixin cor2
+    color: black
+    font-style: italic
+    font-size: $f 
+    @debug "O font-size têm " + $f + " ! "
+    font-family: italic

@@ -1,0 +1,8 @@
+@forward "total"
+@use "total" as t 
+body
+    background-color: t.$inverter
+    @include t.cor2
+    @include t.dm
+    @include t.dp1
+    border: white t.somar(2px, 3px, 5px) solid
